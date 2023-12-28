@@ -1,0 +1,58 @@
+$sizes: (
+  "h1": 3.5rem,
+  "h2": 2.5rem,
+  "h3": 2rem,
+  "h4": 1.7rem,
+  "h5": 1.5rem,
+  "h6": 1.2rem,
+  "p": 1rem,
+);
+
+$weights: (
+  "h1": 800,
+  "h2": 700,
+  "h3": 700,
+  "h4": 600,
+  "h5": 500,
+  "h6": 400,
+  "p": 300,
+);
+
+$margins: (
+  "h1": 0.2rem,
+  "h2": 0.5rem,
+  "h3": 0.8rem,
+  "h4": 0.8rem,
+  "h5": 1rem,
+  "h6": 1.2rem,
+  "p": 1.5rem,
+);
+
+@each $tag, $size in $sizes {
+  #{$tag} {
+    font-size: $size;
+    text-transform: capitalize;
+  }
+}
+
+@each $tag, $weight in $weights {
+  #{$tag} {
+    font-weight: $weight;
+  }
+}
+
+@each $tag, $margin in $margins {
+  #{$tag} {
+    margin: 0 0 $margin 0;
+  }
+}
+
+body {
+  line-height: 1.5;
+  p {
+    text-transform: lowercase;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

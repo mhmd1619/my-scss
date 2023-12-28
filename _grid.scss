@@ -1,0 +1,72 @@
+$cols: 12;
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  @media screen and (min-width: 1399px) {
+    max-width: 1320px;
+  }
+  @media screen and (max-width: 1199px) {
+    max-width: 1144px;
+  }
+  @media screen and (max-width: 991px) {
+    max-width: 960px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 720px;
+  }
+  @media screen and (max-width: 575px) {
+    max-width: 540px;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+@for $i from 1 through $cols {
+  .cols-xxl-#{$i} {
+    @media screen and (min-width: 1400px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  .cols-xl-#{$i} {
+    @media screen and (min-width: 1399px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+    @media screen and (max-width: 1399px) and (min-width: 1200px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  .cols-lg-#{$i} {
+    @media screen and (min-width: 1199px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  .cols-md-#{$i} {
+    @media screen and (min-width: 991px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  .cols-sm-#{$i} {
+    @media screen and (min-width: 767px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+    @media screen and (max-width: 767px) and (min-width: 575px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  .cols-#{$i} {
+    @media screen and (max-width: 575px) {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+}

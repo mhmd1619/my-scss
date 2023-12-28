@@ -1,0 +1,33 @@
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+@for $i from 0 through 20 {
+  .m-#{$i} {
+    margin: #{$i}rem;
+  }
+}
