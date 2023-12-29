@@ -1,4 +1,10 @@
+@use "./variables" as *;
 @use "./reset";
 @use "./typography";
 @use "./grid";
 @use "./helpers";
+@use "./mixins" as *;
+
+body {
+  background-color: $background;
+}

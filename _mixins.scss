@@ -1,0 +1,18 @@
+@mixin circle($dimensions) {
+  width: $dimensions;
+  height: $dimensions;
+  border-radius: 50%;
+}
+
+@mixin position($type, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: $type;
+  inset: $top $right $bottom $left;
+}
+
+@mixin linear-gradient($deg: to right, $start, $end) {
+  background: linear-gradient($deg, $start, $end);
+}
+
+@mixin radial-gradient($type: closest-side, $start, $end) {
+  background: radial-gradient($type, $start, $end);
+}

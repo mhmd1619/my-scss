@@ -21,7 +21,8 @@ body {
     height: auto;
   }
   button,
-  input {
+  input,
+  textarea {
     border: 0;
     background-color: transparent;
   }
@@ -36,5 +37,10 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 }

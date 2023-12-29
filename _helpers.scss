@@ -26,8 +26,85 @@
   display: inline-flex;
 }
 
-@for $i from 0 through 20 {
+.inline-grid {
+  display: grid;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@for $i from 0 through 30 {
   .m-#{$i} {
-    margin: #{$i}rem;
+    margin: #{$i / 10}rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i / 10}rem;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i / 10}rem;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i / 10}rem;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i / 10}rem;
+  }
+  .mx-#{$i} {
+    margin-right: #{$i / 10}rem;
+    margin-left: #{$i / 10}rem;
+  }
+  .my-#{$i} {
+    margin-top: #{$i / 10}rem;
+    margin-bottom: #{$i / 10}rem;
+  }
+  .p-#{$i} {
+    padding: #{$i / 10}rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i / 10}rem;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i / 10}rem;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i / 10}rem;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i / 10}rem;
+  }
+  .px-#{$i} {
+    padding-left: #{$i / 10}rem;
+    padding-right: #{$i / 10}rem;
+  }
+  .py-#{$i} {
+    padding-top: #{$i / 10}rem;
+    padding-bottom: #{$i / 10}rem;
   }
 }
+
+@for $i from 0 through 100 {
+  .w-#{$i} {
+    width: #{$i}vh;
+  }
+  .h-#{$i} {
+    height: #{$i}vh;
+  }
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
