@@ -1,3 +1,3 @@
-# my scss
-simple scss setup to uniqe design
+# My SCSS
+simple scss setup to create uniqe design
  
