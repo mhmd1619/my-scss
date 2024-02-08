@@ -1,2 +1,3 @@
-# minimal sass framework
+# my scss
+simple scss setup to uniqe design
  
