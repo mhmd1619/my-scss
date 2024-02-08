@@ -1,5 +1,17 @@
-$background: #f1f1f1;
-$background-alt: #fff;
-$text: #212121;
-$text-alt: #777;
-$main: #007bff;
+:root {
+  --background: #f1f1f1;
+  --background-alt: #fff;
+  --text: #212121;
+  --text-alt: #777;
+  --main: #007bff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --background-alt: #212121;
+    --text: #eee;
+    --text-alt: #777;
+    --main: #007bff;
+  }
+}
